@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_label_size">10sp</dimen>
+    <dimen name="default_bar_width">20dp</dimen>
+    <dimen name="label_divider_gap">5dp</dimen>
+    <dimen name="target_label_width">25dp</dimen>
+    <dimen name="target_label_height">15dp</dimen>
+    <dimen name="chart_padding">10dp</dimen>
+    <dimen name="target_label_size">7sp</dimen>
+    <dimen name="target_label_arc">10dp</dimen>
+    <dimen name="value_label_text_size">8sp</dimen>
+    <dimen name="value_label_width">20dp</dimen>
+    <dimen name="value_label_height">15dp</dimen>
+
+</resources>
