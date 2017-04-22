@@ -1,4 +1,4 @@
-package com.ivan.sleepbarchart;
+package com.ivan.cobarchart;
 
 /**
  * Created by ivan on 17-4-19.

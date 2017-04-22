@@ -1,4 +1,4 @@
-package com.ivan.sleepbarchart;
+package com.ivan.cobarchart;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -31,7 +31,7 @@ public class CoBarChart extends View {
     public static final int DIVIDER_DASH = 1;
 
 
-    private List<DataSet> mDataSetList = new ArrayList<>();
+    private List<com.ivan.cobarchart.DataSet> mDataSetList = new ArrayList<>();
 
     private int mThirdColor;
     private int mFirstColor;
