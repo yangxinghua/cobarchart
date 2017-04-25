@@ -353,29 +353,29 @@ public class CoBarChart extends View {
                         availableHeight, mBarPaint);
 
                 // draw bar value label;
-//                if (mTouch) {
-//                    int touchBar = (int) ((mTouchX - mChartPadding) / perWidth);
-//                    if (touchBar == i) {
-//                        Log.d(TAG, "touchbar ---> " + touchBar);
-//                        Log.d(TAG, "draw arrow --->");
-//                        mValueLabelArrowPath.reset();
-//                        mValueLabelArrowPath.moveTo(mChartPadding + perWidth * (i + 1) - perWidth * 0.5f - 10,
-//                                mAvailableChartHeight - barHeight - 20);
-//                        mValueLabelArrowPath.lineTo(mChartPadding + perWidth * (i + 1) - perWidth * 0.5f,
-//                                mAvailableChartHeight - barHeight - 10);
-//                        mValueLabelArrowPath.lineTo(mChartPadding + perWidth * (i + 1) - perWidth * 0.5f + 10,
-//                                mAvailableChartHeight - barHeight - 20);
-//                        mValueLabelArrowPath.lineTo(mChartPadding + perWidth * (i + 1) - 10,
-//                                mAvailableChartHeight - barHeight - 20);
-//                        mValueLabelArrowPath.quadTo(mChartPadding + perWidth * (i + 1),
-//                                mAvailableChartHeight - barHeight - 20,
-//                                mChartPadding + perWidth * (i + 1),
-//                                mAvailableChartHeight - barHeight - 10 + mValueLabelHeight);
-//                        mValueLabelArrowPath.close();
-//                        canvas.drawPath(mValueLabelArrowPath, mValueRectPaint);
-//                    }
-//
-//                }
+                if (mTouch) {
+                    int touchBar = (int) ((mTouchX - mChartPadding) / perWidth);
+                    if (touchBar == i) {
+                        Log.d(TAG, "touchbar ---> " + touchBar);
+                        Log.d(TAG, "draw value label arrow --->");
+                        mValueLabelArrowPath.reset();
+                        mValueLabelArrowPath.moveTo(mChartPadding + perWidth * (i + 1) - perWidth * 0.5f - 10,
+                                mAvailableChartHeight - barHeight - 20);
+                        mValueLabelArrowPath.lineTo(mChartPadding + perWidth * (i + 1) - perWidth * 0.5f,
+                                mAvailableChartHeight - barHeight - 10);
+                        mValueLabelArrowPath.lineTo(mChartPadding + perWidth * (i + 1) - perWidth * 0.5f + 10,
+                                mAvailableChartHeight - barHeight - 20);
+                        mValueLabelArrowPath.lineTo(mChartPadding + perWidth * (i + 1) - 10,
+                                mAvailableChartHeight - barHeight - 20);
+                        mValueLabelArrowPath.quadTo(mChartPadding + perWidth * (i + 1),
+                                mAvailableChartHeight - barHeight - 20,
+                                mChartPadding + perWidth * (i + 1),
+                                mAvailableChartHeight - barHeight - 10 + mValueLabelHeight);
+                        mValueLabelArrowPath.close();
+                        canvas.drawPath(mValueLabelArrowPath, mValueRectPaint);
+                    }
+
+                }
             }
 
         }
